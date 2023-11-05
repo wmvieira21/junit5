@@ -87,4 +87,12 @@ public class UserTest {
 		});
 		assertEquals(exceptionMessage, assertThrows2.getMessage());
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
