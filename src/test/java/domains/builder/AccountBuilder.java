@@ -1,4 +1,4 @@
-package domain.builder;
+package domains.builder;
 
 import com.junit.domain.Account;
 import com.junit.domain.User;

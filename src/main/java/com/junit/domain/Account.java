@@ -62,4 +62,9 @@ public class Account {
 		Account other = (Account) obj;
 		return Objects.equals(id, other.id);
 	}
+
+	@Override
+	public String toString() {
+		return "Account [id=" + id + ", name=" + name + ", user=" + user + "]";
+	}
 }

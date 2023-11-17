@@ -12,9 +12,9 @@ import org.junit.jupiter.api.TestMethodOrder;
 import com.junit.domain.User;
 import com.junit.domain.exceptions.ValidationException;
 import com.junit.infra.UserMemoryRepository;
-import com.junit.sercive.UserService;
+import com.junit.service.UserService;
 
-import domain.builder.UserBuilder;
+import domains.builder.UserBuilder;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class UserServiceWithRepositoryTest {

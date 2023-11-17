@@ -5,7 +5,7 @@ import java.util.Optional;
 import com.junit.domain.User;
 import com.junit.sercive.repository.UserRepository;
 
-import domain.builder.UserBuilder;
+import domains.builder.UserBuilder;
 
 public class UserDummyRepository implements UserRepository {
 

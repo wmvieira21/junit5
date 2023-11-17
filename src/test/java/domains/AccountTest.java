@@ -1,3 +1,4 @@
+package domains;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -15,8 +16,9 @@ import com.junit.domain.Account;
 import com.junit.domain.User;
 import com.junit.domain.exceptions.ValidationException;
 
-import domain.builder.AccountBuilder;
-import domain.builder.UserBuilder;
+import domains.builder.AccountBuilder;
+import domains.builder.UserBuilder;
+
 
 //Using TDD
 

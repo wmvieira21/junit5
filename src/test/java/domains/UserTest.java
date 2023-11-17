@@ -1,3 +1,4 @@
+package domains;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -13,7 +14,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import com.junit.domain.User;
 import com.junit.domain.exceptions.ValidationException;
 
-import domain.builder.UserBuilder;
+import domains.builder.UserBuilder;
 
 public class UserTest {
 
@@ -77,7 +78,7 @@ public class UserTest {
 	}
 
 	@ParameterizedTest(name = "{index} - {4}")
-	@CsvFileSource(resources = "mandatoryFields.csv", nullValues = "null"/*,useHeadersInDisplayName = true, numLinesToSkip = 1*/)
+	@CsvFileSource(resources = "C:\\Users\\willi\\Desktop\\Projects\\junit5\\src\\test\\resources\\mandatoryFields.csv", nullValues = "null"/*,useHeadersInDisplayName = true, numLinesToSkip = 1*/)
 	@DisplayName("Validade user exceptions file")
 	public void validateUserDataExceptionsFile(Long id, String name, String email, String password,
 			String exceptionMessage) {
@@ -86,13 +87,5 @@ public class UserTest {
 					.withPassword(password).now();
 		});
 		assertEquals(exceptionMessage, assertThrows2.getMessage());
-	}
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 }

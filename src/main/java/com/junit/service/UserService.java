@@ -1,4 +1,4 @@
-package com.junit.sercive;
+package com.junit.service;
 
 import java.util.Optional;
 

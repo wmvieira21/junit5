@@ -1,10 +1,10 @@
-package domain.builder;
+package domains.builder;
 
 import com.junit.domain.User;
 
 public class UserBuilder {
 	private Long id = 0L;
-	private String name = "default";
+	private String name = "default user";
 	private String email = "default@gmail.com";
 	private String password = "abc";
 
